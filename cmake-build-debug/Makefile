@@ -129,29 +129,77 @@ analyse/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/analyse.dir/build.make CMakeFiles/analyse.dir/build
 .PHONY : analyse/fast
 
-cFiles/maximalLength.o: cFiles/maximalLength.c.o
-.PHONY : cFiles/maximalLength.o
+cFiles/calculScore.o: cFiles/calculScore.c.o
+.PHONY : cFiles/calculScore.o
 
 # target to build an object file
-cFiles/maximalLength.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/analyse.dir/build.make CMakeFiles/analyse.dir/cFiles/maximalLength.c.o
-.PHONY : cFiles/maximalLength.c.o
+cFiles/calculScore.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/analyse.dir/build.make CMakeFiles/analyse.dir/cFiles/calculScore.c.o
+.PHONY : cFiles/calculScore.c.o
 
-cFiles/maximalLength.i: cFiles/maximalLength.c.i
-.PHONY : cFiles/maximalLength.i
+cFiles/calculScore.i: cFiles/calculScore.c.i
+.PHONY : cFiles/calculScore.i
 
 # target to preprocess a source file
-cFiles/maximalLength.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/analyse.dir/build.make CMakeFiles/analyse.dir/cFiles/maximalLength.c.i
-.PHONY : cFiles/maximalLength.c.i
+cFiles/calculScore.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/analyse.dir/build.make CMakeFiles/analyse.dir/cFiles/calculScore.c.i
+.PHONY : cFiles/calculScore.c.i
 
-cFiles/maximalLength.s: cFiles/maximalLength.c.s
-.PHONY : cFiles/maximalLength.s
+cFiles/calculScore.s: cFiles/calculScore.c.s
+.PHONY : cFiles/calculScore.s
 
 # target to generate assembly for a file
-cFiles/maximalLength.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/analyse.dir/build.make CMakeFiles/analyse.dir/cFiles/maximalLength.c.s
-.PHONY : cFiles/maximalLength.c.s
+cFiles/calculScore.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/analyse.dir/build.make CMakeFiles/analyse.dir/cFiles/calculScore.c.s
+.PHONY : cFiles/calculScore.c.s
+
+cFiles/calculScorePolarite.o: cFiles/calculScorePolarite.c.o
+.PHONY : cFiles/calculScorePolarite.o
+
+# target to build an object file
+cFiles/calculScorePolarite.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/analyse.dir/build.make CMakeFiles/analyse.dir/cFiles/calculScorePolarite.c.o
+.PHONY : cFiles/calculScorePolarite.c.o
+
+cFiles/calculScorePolarite.i: cFiles/calculScorePolarite.c.i
+.PHONY : cFiles/calculScorePolarite.i
+
+# target to preprocess a source file
+cFiles/calculScorePolarite.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/analyse.dir/build.make CMakeFiles/analyse.dir/cFiles/calculScorePolarite.c.i
+.PHONY : cFiles/calculScorePolarite.c.i
+
+cFiles/calculScorePolarite.s: cFiles/calculScorePolarite.c.s
+.PHONY : cFiles/calculScorePolarite.s
+
+# target to generate assembly for a file
+cFiles/calculScorePolarite.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/analyse.dir/build.make CMakeFiles/analyse.dir/cFiles/calculScorePolarite.c.s
+.PHONY : cFiles/calculScorePolarite.c.s
+
+cFiles/transcription.o: cFiles/transcription.c.o
+.PHONY : cFiles/transcription.o
+
+# target to build an object file
+cFiles/transcription.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/analyse.dir/build.make CMakeFiles/analyse.dir/cFiles/transcription.c.o
+.PHONY : cFiles/transcription.c.o
+
+cFiles/transcription.i: cFiles/transcription.c.i
+.PHONY : cFiles/transcription.i
+
+# target to preprocess a source file
+cFiles/transcription.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/analyse.dir/build.make CMakeFiles/analyse.dir/cFiles/transcription.c.i
+.PHONY : cFiles/transcription.c.i
+
+cFiles/transcription.s: cFiles/transcription.c.s
+.PHONY : cFiles/transcription.s
+
+# target to generate assembly for a file
+cFiles/transcription.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/analyse.dir/build.make CMakeFiles/analyse.dir/cFiles/transcription.c.s
+.PHONY : cFiles/transcription.c.s
 
 main.o: main.c.o
 .PHONY : main.o
@@ -186,9 +234,15 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... analyse"
-	@echo "... cFiles/maximalLength.o"
-	@echo "... cFiles/maximalLength.i"
-	@echo "... cFiles/maximalLength.s"
+	@echo "... cFiles/calculScore.o"
+	@echo "... cFiles/calculScore.i"
+	@echo "... cFiles/calculScore.s"
+	@echo "... cFiles/calculScorePolarite.o"
+	@echo "... cFiles/calculScorePolarite.i"
+	@echo "... cFiles/calculScorePolarite.s"
+	@echo "... cFiles/transcription.o"
+	@echo "... cFiles/transcription.i"
+	@echo "... cFiles/transcription.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

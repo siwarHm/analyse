@@ -8,7 +8,9 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/mohamed/Documents/GitHub/analyse/cFiles/maximalLength.c" "CMakeFiles/analyse.dir/cFiles/maximalLength.c.o" "gcc" "CMakeFiles/analyse.dir/cFiles/maximalLength.c.o.d"
+  "/home/mohamed/Documents/GitHub/analyse/cFiles/calculScore.c" "CMakeFiles/analyse.dir/cFiles/calculScore.c.o" "gcc" "CMakeFiles/analyse.dir/cFiles/calculScore.c.o.d"
+  "/home/mohamed/Documents/GitHub/analyse/cFiles/calculScorePolarite.c" "CMakeFiles/analyse.dir/cFiles/calculScorePolarite.c.o" "gcc" "CMakeFiles/analyse.dir/cFiles/calculScorePolarite.c.o.d"
+  "/home/mohamed/Documents/GitHub/analyse/cFiles/transcription.c" "CMakeFiles/analyse.dir/cFiles/transcription.c.o" "gcc" "CMakeFiles/analyse.dir/cFiles/transcription.c.o.d"
   "/home/mohamed/Documents/GitHub/analyse/main.c" "CMakeFiles/analyse.dir/main.c.o" "gcc" "CMakeFiles/analyse.dir/main.c.o.d"
   )
 

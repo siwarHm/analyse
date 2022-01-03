@@ -1,10 +1,12 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+
+#include "hFiles/calculScore.h"
 #include "hFiles/transcription.h"
-#include "hFiles/maximalLength.h"
+#include "hFiles/calculScorePolarite.h"
 
-
+/*
 
 int transcriptionMain2 () {
 
@@ -252,11 +254,10 @@ int calculscore () {
 
 
 
-
-int main() {
-
-    calculscore();
-   // transcriptionMain2();
+*/int main() {
+    //calculScoreMain();
+    //transcriptionMain();
+   calculScorePolariteMain();
     /*
     int variable ;
     printf("Veuillez choisir la fonctionnalitée : \n");

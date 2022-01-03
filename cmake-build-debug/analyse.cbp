@@ -76,7 +76,22 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/home/mohamed/Documents/GitHub/analyse/cFiles/maximalLength.c">
+		<Unit filename="/home/mohamed/Documents/GitHub/analyse/cFiles/calculScore.c">
+			<Option target="analyse"/>
+		</Unit>
+		<Unit filename="/home/mohamed/Documents/GitHub/analyse/cFiles/calculScorePolarite.c">
+			<Option target="analyse"/>
+		</Unit>
+		<Unit filename="/home/mohamed/Documents/GitHub/analyse/cFiles/transcription.c">
+			<Option target="analyse"/>
+		</Unit>
+		<Unit filename="/home/mohamed/Documents/GitHub/analyse/hFiles/calculScore.h">
+			<Option target="analyse"/>
+		</Unit>
+		<Unit filename="/home/mohamed/Documents/GitHub/analyse/hFiles/calculScorePolarite.h">
+			<Option target="analyse"/>
+		</Unit>
+		<Unit filename="/home/mohamed/Documents/GitHub/analyse/hFiles/transcription.h">
 			<Option target="analyse"/>
 		</Unit>
 		<Unit filename="/home/mohamed/Documents/GitHub/analyse/main.c">

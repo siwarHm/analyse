@@ -83,33 +83,65 @@ CMakeFiles/analyse.dir/main.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/analyse.dir/main.c.s"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/mohamed/Documents/GitHub/analyse/main.c -o CMakeFiles/analyse.dir/main.c.s
 
-CMakeFiles/analyse.dir/cFiles/maximalLength.c.o: CMakeFiles/analyse.dir/flags.make
-CMakeFiles/analyse.dir/cFiles/maximalLength.c.o: ../cFiles/maximalLength.c
-CMakeFiles/analyse.dir/cFiles/maximalLength.c.o: CMakeFiles/analyse.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mohamed/Documents/GitHub/analyse/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/analyse.dir/cFiles/maximalLength.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/analyse.dir/cFiles/maximalLength.c.o -MF CMakeFiles/analyse.dir/cFiles/maximalLength.c.o.d -o CMakeFiles/analyse.dir/cFiles/maximalLength.c.o -c /home/mohamed/Documents/GitHub/analyse/cFiles/maximalLength.c
+CMakeFiles/analyse.dir/cFiles/calculScore.c.o: CMakeFiles/analyse.dir/flags.make
+CMakeFiles/analyse.dir/cFiles/calculScore.c.o: ../cFiles/calculScore.c
+CMakeFiles/analyse.dir/cFiles/calculScore.c.o: CMakeFiles/analyse.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mohamed/Documents/GitHub/analyse/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/analyse.dir/cFiles/calculScore.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/analyse.dir/cFiles/calculScore.c.o -MF CMakeFiles/analyse.dir/cFiles/calculScore.c.o.d -o CMakeFiles/analyse.dir/cFiles/calculScore.c.o -c /home/mohamed/Documents/GitHub/analyse/cFiles/calculScore.c
 
-CMakeFiles/analyse.dir/cFiles/maximalLength.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/analyse.dir/cFiles/maximalLength.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/mohamed/Documents/GitHub/analyse/cFiles/maximalLength.c > CMakeFiles/analyse.dir/cFiles/maximalLength.c.i
+CMakeFiles/analyse.dir/cFiles/calculScore.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/analyse.dir/cFiles/calculScore.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/mohamed/Documents/GitHub/analyse/cFiles/calculScore.c > CMakeFiles/analyse.dir/cFiles/calculScore.c.i
 
-CMakeFiles/analyse.dir/cFiles/maximalLength.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/analyse.dir/cFiles/maximalLength.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/mohamed/Documents/GitHub/analyse/cFiles/maximalLength.c -o CMakeFiles/analyse.dir/cFiles/maximalLength.c.s
+CMakeFiles/analyse.dir/cFiles/calculScore.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/analyse.dir/cFiles/calculScore.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/mohamed/Documents/GitHub/analyse/cFiles/calculScore.c -o CMakeFiles/analyse.dir/cFiles/calculScore.c.s
+
+CMakeFiles/analyse.dir/cFiles/transcription.c.o: CMakeFiles/analyse.dir/flags.make
+CMakeFiles/analyse.dir/cFiles/transcription.c.o: ../cFiles/transcription.c
+CMakeFiles/analyse.dir/cFiles/transcription.c.o: CMakeFiles/analyse.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mohamed/Documents/GitHub/analyse/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/analyse.dir/cFiles/transcription.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/analyse.dir/cFiles/transcription.c.o -MF CMakeFiles/analyse.dir/cFiles/transcription.c.o.d -o CMakeFiles/analyse.dir/cFiles/transcription.c.o -c /home/mohamed/Documents/GitHub/analyse/cFiles/transcription.c
+
+CMakeFiles/analyse.dir/cFiles/transcription.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/analyse.dir/cFiles/transcription.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/mohamed/Documents/GitHub/analyse/cFiles/transcription.c > CMakeFiles/analyse.dir/cFiles/transcription.c.i
+
+CMakeFiles/analyse.dir/cFiles/transcription.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/analyse.dir/cFiles/transcription.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/mohamed/Documents/GitHub/analyse/cFiles/transcription.c -o CMakeFiles/analyse.dir/cFiles/transcription.c.s
+
+CMakeFiles/analyse.dir/cFiles/calculScorePolarite.c.o: CMakeFiles/analyse.dir/flags.make
+CMakeFiles/analyse.dir/cFiles/calculScorePolarite.c.o: ../cFiles/calculScorePolarite.c
+CMakeFiles/analyse.dir/cFiles/calculScorePolarite.c.o: CMakeFiles/analyse.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mohamed/Documents/GitHub/analyse/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/analyse.dir/cFiles/calculScorePolarite.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/analyse.dir/cFiles/calculScorePolarite.c.o -MF CMakeFiles/analyse.dir/cFiles/calculScorePolarite.c.o.d -o CMakeFiles/analyse.dir/cFiles/calculScorePolarite.c.o -c /home/mohamed/Documents/GitHub/analyse/cFiles/calculScorePolarite.c
+
+CMakeFiles/analyse.dir/cFiles/calculScorePolarite.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/analyse.dir/cFiles/calculScorePolarite.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/mohamed/Documents/GitHub/analyse/cFiles/calculScorePolarite.c > CMakeFiles/analyse.dir/cFiles/calculScorePolarite.c.i
+
+CMakeFiles/analyse.dir/cFiles/calculScorePolarite.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/analyse.dir/cFiles/calculScorePolarite.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/mohamed/Documents/GitHub/analyse/cFiles/calculScorePolarite.c -o CMakeFiles/analyse.dir/cFiles/calculScorePolarite.c.s
 
 # Object files for target analyse
 analyse_OBJECTS = \
 "CMakeFiles/analyse.dir/main.c.o" \
-"CMakeFiles/analyse.dir/cFiles/maximalLength.c.o"
+"CMakeFiles/analyse.dir/cFiles/calculScore.c.o" \
+"CMakeFiles/analyse.dir/cFiles/transcription.c.o" \
+"CMakeFiles/analyse.dir/cFiles/calculScorePolarite.c.o"
 
 # External object files for target analyse
 analyse_EXTERNAL_OBJECTS =
 
 analyse: CMakeFiles/analyse.dir/main.c.o
-analyse: CMakeFiles/analyse.dir/cFiles/maximalLength.c.o
+analyse: CMakeFiles/analyse.dir/cFiles/calculScore.c.o
+analyse: CMakeFiles/analyse.dir/cFiles/transcription.c.o
+analyse: CMakeFiles/analyse.dir/cFiles/calculScorePolarite.c.o
 analyse: CMakeFiles/analyse.dir/build.make
 analyse: CMakeFiles/analyse.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/mohamed/Documents/GitHub/analyse/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking C executable analyse"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/mohamed/Documents/GitHub/analyse/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking C executable analyse"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/analyse.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
