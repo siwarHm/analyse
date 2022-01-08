@@ -50,4 +50,5 @@ CMakeFiles/analyse.dir/cFiles/traduction.c.o: \
  /usr/include/x86_64-linux-gnu/bits/types/locale_t.h \
  /usr/include/x86_64-linux-gnu/bits/types/__locale_t.h \
  /usr/include/strings.h /usr/lib/gcc/x86_64-linux-gnu/9/include/stdbool.h \
- /home/mohamed/Documents/GitHub/analyse/cFiles/../hFiles/traduction.h
+ /home/mohamed/Documents/GitHub/analyse/cFiles/../hFiles/traduction.h \
+ /home/mohamed/Documents/GitHub/analyse/cFiles/../hFiles/utils.h

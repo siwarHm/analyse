@@ -13,7 +13,8 @@
 
 
 int main() {
-    calculScorePolariteMain();
+   // transcriptionMain();
+    traducionMain();
  /*   char path_input[200] ;
     get_path_from_user(path_input);
     char sequence[10000] ;

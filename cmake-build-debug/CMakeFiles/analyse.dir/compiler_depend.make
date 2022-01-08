@@ -180,7 +180,8 @@ CMakeFiles/analyse.dir/cFiles/traduction.c.o: ../cFiles/traduction.c \
   /usr/include/x86_64-linux-gnu/bits/types/__locale_t.h \
   /usr/include/strings.h \
   /usr/lib/gcc/x86_64-linux-gnu/9/include/stdbool.h \
-  ../hFiles/traduction.h
+  ../hFiles/traduction.h \
+  ../hFiles/utils.h
 
 CMakeFiles/analyse.dir/cFiles/transcription.c.o: ../cFiles/transcription.c \
   /usr/include/stdc-predef.h \

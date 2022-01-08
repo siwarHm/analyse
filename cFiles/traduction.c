@@ -3,6 +3,7 @@
 #include <string.h>
 #include <stdbool.h>
 #include "../hFiles/traduction.h"
+#include "../hFiles/utils.h"
 
 char prot( char car1 , char car2 , char car3 ) {
     if (car1 == 'G') {
@@ -101,57 +102,26 @@ char prot( char car1 , char car2 , char car3 ) {
 
 void traducionMain (){
 
+    printf(" ----------------------- Module Traduction --------------------- \n");
+    // sequence
+    char path_input[200] ;
+    get_path_from_user(path_input, "input");
     char sequence[10000] ;
-    FILE * fp;
-    char * line = NULL;
-    size_t len = 0;
-    ssize_t read;
-    //recupertion fileName
-    char filename[40];
-    printf("veuillez saisir nom du fichier : \n");
-    scanf("%s",filename);
-    //definir filePth
-    char path[40] = "/home/mohamed/Documents/GitHub/analyse/" ;
-    //concatenation fileName & filePath
-    char *filePath;
-    filePath = malloc(strlen(filename)+40);
-    strcpy(filePath, path);
-    strcat(filePath, filename);
-    // ouverture du fichier
-    fp = fopen(filePath , "r");
-    if (fp == NULL){
-        printf("fichier introuvable");
-        exit(EXIT_FAILURE);
-    }
-    // lecture du fichier ligne par ligne
-    while ((read = getline(&line, &len, fp)) != -1) {
-        //printf("Retrieved line of length %zu:\n", read);
-        //printf("%s", line);
-        // concatenation de toutes les lignes
-        char lastLineChar = line[strlen(line)-1] ;
-        if (lastLineChar == '\n'){
-            line[strlen(line)-1] = '\0';
-            strcat(sequence,line);
-        } else {
-            strcat(sequence,line);
-        }
-    }
-    sequence[strlen(sequence)] = '\0';
-    // printf(" sequence = %s \n" , sequence);
+    extract_sequence(path_input, sequence);
 
-    fclose(fp);
-    if (line)
-        free(line);
-
-    //remplacer T par U
-    for (int i = 0 ; i < strlen(sequence); i++)
-    {
-        if ( sequence[i] == 'T' ){
-            sequence[i] = 'U';
-        }
+    // creation sequence
+    char seqProt[10000] ;
+    seqProt[0] = 'M' ; //
+    int seqProtLength = 1 ;
+    for ( int  i = 3 ; i < strlen(sequence);i = i + 3) {
+        seqProt[seqProtLength] = prot(sequence[i],sequence[i+1],sequence[i+2]);
+        seqProtLength = seqProtLength + 1 ;
     }
 
-    // creation sequence proteine
+    //exporter sequence
+    char path_output[200] ;
+    get_path_from_user(path_output, "output de proteine");
+    save_sequence(path_output,seqProt);
 
 
 

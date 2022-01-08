@@ -184,6 +184,7 @@ CMakeFiles/analyse.dir/cFiles/traduction.c.o
  /usr/include/strings.h
  /usr/lib/gcc/x86_64-linux-gnu/9/include/stdbool.h
  /home/mohamed/Documents/GitHub/analyse/hFiles/traduction.h
+ /home/mohamed/Documents/GitHub/analyse/hFiles/utils.h
 
 CMakeFiles/analyse.dir/cFiles/transcription.c.o
  /home/mohamed/Documents/GitHub/analyse/cFiles/transcription.c

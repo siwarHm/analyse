@@ -2,12 +2,12 @@
 #include <stdlib.h>
 #include <string.h>
 #include "../hFiles/utils.h"
-void get_path_from_user( char *  path_input , const char type[10]){
+void get_path_from_user( char *  path , const char type[10]){
     printf("veuillez saisir le path de fichier %s : \n" , type);
     ssize_t read;
     size_t len = 0;
-    read = getline(&path_input, (size_t *) &path_input, stdin);
-    path_input[strlen(path_input)-1] = '\0';
+    read = getline(&path, (size_t *) &path, stdin);
+    path[strlen(path)-1] = '\0';
 }
 
 
@@ -23,7 +23,7 @@ void extract_sequence(const char* path_input, char* sequence) {
     // ouverture du fichier
     fp = fopen(path_input , "r");
     if (fp == NULL){
-        printf("fichier introuvable");
+        printf("\033[0;31mLe fichier introuvable \033[0m  \n" ) ;
         exit(EXIT_FAILURE);
     }
     // lecture du fichier ligne par ligne
@@ -70,7 +70,7 @@ void save_sequence(const char* path_output  , char* sequence) {
         i = i +79 ;
     }
 
-    printf("\033[0;31m Le fichier est bien exporté \033[0m  \n" ) ;
+    printf("\033[0;34mLe fichier est bien exporté \033[0m  \n" ) ;
     fclose(output_transcription);
     exit(EXIT_SUCCESS);
 }
