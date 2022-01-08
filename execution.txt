@@ -1,3 +1,11 @@
 gcc -std=c11 -pedantic -Wall -Wextra main.c cFiles/transcription.c cFiles/maximalLength.c  -o program.exe
 
 ./program.exe
+
+
+
+
+
+/home/mohamed/Desktop/projet/seq1.txt
+
+ sequence[strlen(sequence)] = '\0';

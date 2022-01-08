@@ -3,4 +3,5 @@
 #ifndef ANALYSE_TRANSCRIPTION_H
 #define ANALYSE_TRANSCRIPTION_H
 void transcriptionMain ();
+
 #endif //ANALYSE_TRANSCRIPTION_H

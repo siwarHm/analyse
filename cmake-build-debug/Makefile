@@ -177,6 +177,30 @@ cFiles/calculScorePolarite.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/analyse.dir/build.make CMakeFiles/analyse.dir/cFiles/calculScorePolarite.c.s
 .PHONY : cFiles/calculScorePolarite.c.s
 
+cFiles/traduction.o: cFiles/traduction.c.o
+.PHONY : cFiles/traduction.o
+
+# target to build an object file
+cFiles/traduction.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/analyse.dir/build.make CMakeFiles/analyse.dir/cFiles/traduction.c.o
+.PHONY : cFiles/traduction.c.o
+
+cFiles/traduction.i: cFiles/traduction.c.i
+.PHONY : cFiles/traduction.i
+
+# target to preprocess a source file
+cFiles/traduction.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/analyse.dir/build.make CMakeFiles/analyse.dir/cFiles/traduction.c.i
+.PHONY : cFiles/traduction.c.i
+
+cFiles/traduction.s: cFiles/traduction.c.s
+.PHONY : cFiles/traduction.s
+
+# target to generate assembly for a file
+cFiles/traduction.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/analyse.dir/build.make CMakeFiles/analyse.dir/cFiles/traduction.c.s
+.PHONY : cFiles/traduction.c.s
+
 cFiles/transcription.o: cFiles/transcription.c.o
 .PHONY : cFiles/transcription.o
 
@@ -200,6 +224,30 @@ cFiles/transcription.s: cFiles/transcription.c.s
 cFiles/transcription.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/analyse.dir/build.make CMakeFiles/analyse.dir/cFiles/transcription.c.s
 .PHONY : cFiles/transcription.c.s
+
+cFiles/utils.o: cFiles/utils.c.o
+.PHONY : cFiles/utils.o
+
+# target to build an object file
+cFiles/utils.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/analyse.dir/build.make CMakeFiles/analyse.dir/cFiles/utils.c.o
+.PHONY : cFiles/utils.c.o
+
+cFiles/utils.i: cFiles/utils.c.i
+.PHONY : cFiles/utils.i
+
+# target to preprocess a source file
+cFiles/utils.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/analyse.dir/build.make CMakeFiles/analyse.dir/cFiles/utils.c.i
+.PHONY : cFiles/utils.c.i
+
+cFiles/utils.s: cFiles/utils.c.s
+.PHONY : cFiles/utils.s
+
+# target to generate assembly for a file
+cFiles/utils.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/analyse.dir/build.make CMakeFiles/analyse.dir/cFiles/utils.c.s
+.PHONY : cFiles/utils.c.s
 
 main.o: main.c.o
 .PHONY : main.o
@@ -240,9 +288,15 @@ help:
 	@echo "... cFiles/calculScorePolarite.o"
 	@echo "... cFiles/calculScorePolarite.i"
 	@echo "... cFiles/calculScorePolarite.s"
+	@echo "... cFiles/traduction.o"
+	@echo "... cFiles/traduction.i"
+	@echo "... cFiles/traduction.s"
 	@echo "... cFiles/transcription.o"
 	@echo "... cFiles/transcription.i"
 	@echo "... cFiles/transcription.s"
+	@echo "... cFiles/utils.o"
+	@echo "... cFiles/utils.i"
+	@echo "... cFiles/utils.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

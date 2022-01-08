@@ -1,143 +1,45 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#include "../hFiles/calculScore.h"
+#include "../hFiles/utils.h"
 void calculScoreMain() {
-    FILE * fp;
-    FILE * fp2;
-    char sequence[10000] ;
+    // sequence 1
+    char path_input1[200] ;
+    get_path_from_user(path_input1, "input 1");
+    char sequence1[10000] ;
+    extract_sequence(path_input1, sequence1);
+    printf("Sequence 1  = %s \n" , sequence1);
+    // sequence 2
+    char path_input2[200] ;
+    get_path_from_user(path_input1, "input 2");
     char sequence2[10000] ;
-    char codonInitiation[4] = "";
-    int nbLine = 0;
-    char * line = NULL;
-    size_t len = 0;
-    ssize_t read;
-//recupertion fileName
-    char filename[40];
-    printf("veuillez saisir le nom du premier fichier : \n");
-    scanf("%s",filename);
-//definir filePth
-    char path[40] = "/home/projet/Desktop/projet/" ;
-//concatenation fileName & filePath
-    char *filePath;
-    filePath = malloc(strlen(filename)+40);
-    strcpy(filePath, path);
-    strcat(filePath, filename);
-// ouverture du fichier
-    fp = fopen(filePath , "r");
-    if (fp == NULL){
-        printf("fichier introuvable");
-        calculScoreMain();
-    }
+    extract_sequence(path_input1, sequence2);
+    printf("Sequence 2  = %s \n" , sequence2);
 
-    char filename2[40];
-    printf("veuillez saisir le nom du deuxième fichier : \n");
-    scanf("%s",filename2);
-//concatenation fileName & filePath
-    char *filePath2;
-    filePath2 = malloc(strlen(filename2) + 40);
-    strcpy(filePath2, path);
-    strcat(filePath2, filename2);
-// ouverture du fichier
-    fp2 = fopen(filePath2, "r");
-    if (fp2 == NULL){
-        printf("fichier introuvable");
-        printf("veuillez saisir le nom du deuxième fichier : \n");
-        scanf("%s",filename2);
-    }
-
-    // lecture du fichier ligne par ligne
-    while ((read = getline(&line, &len, fp)) != -1) {
-        //printf("Retrieved line of length %zu:\n", read);
-        //printf("%s", line);
-        nbLine++ ;
-        // verifier codon d'initiation
-        if (nbLine==1){
-            codonInitiation[0] = line[0];
-            codonInitiation[1] = line[1];
-            codonInitiation[2] = line[2];
-            codonInitiation[3] = '\0';
-            int value = strcmp(codonInitiation,"ATG");
-            if (value != 0 ){
-                printf("erreur code d'initiation \n") ;
-                calculScoreMain() ;
-                exit(EXIT_SUCCESS);
-            }
-        }
-        // concatenation de toutes les lignes
-        char lastLineChar = line[strlen(line)-1] ;
-        if (lastLineChar == '\n'){
-            line[strlen(line)-1] = '\0';
-            strcat(sequence,line);
-        } else {
-            strcat(sequence,line);
-        }
-    }
-    sequence[strlen(sequence)] = '\0';
-    printf(" sequence1 = %s \n" , sequence);
-
-    fclose(fp);
-
-    while ((read = getline(&line, &len, fp2)) != -1) {
-        //printf("Retrieved line of length %zu:\n", read);
-        //printf("%s", line);
-        nbLine++ ;
-        // verifier codon d'initiation
-        if (nbLine==1){
-            codonInitiation[0] = line[0];
-            codonInitiation[1] = line[1];
-            codonInitiation[2] = line[2];
-            codonInitiation[3] = '\0';
-            int value = strcmp(codonInitiation,"ATG");
-            if (value != 0 ){
-                printf("erreur code d'initiation \n") ;
-                calculScoreMain() ;
-                exit(EXIT_SUCCESS);
-            }
-        }
-        // concatenation de toutes les lignes
-        char lastLineChar = line[strlen(line)-1] ;
-        if (lastLineChar == '\n'){
-            line[strlen(line)-1] = '\0';
-            strcat(sequence2,line);
-        } else {
-            strcat(sequence2,line);
-        }
-    }
-    sequence2[strlen(sequence2)] = '\0';
-    printf(" sequence2 = %s \n" , sequence2);
-
-    fclose(fp2);
-
-
-    if (line)
-        free(line);
     // test longeur des deux séquences
-    if (strlen(sequence) != strlen(sequence2) ){
-        printf("Erreur: Les deux séquences ne sont pas égales \n");
+    if (strlen(sequence1) != strlen(sequence2) ){
+        printf("\033[0;31m Erreur: Les deux séquences ne sont pas égales \033[0m  \n") ;
         calculScoreMain() ;
         exit(EXIT_SUCCESS);
     } else{
-        printf("les sequences ont bien la meme longueur \n");
+        printf("\033[0;34m Les sequences ont bien la meme longueur \033[0m  \n");
     }
-    char id[strlen(sequence)];
-
+    // Calcul score
+    char id[strlen(sequence1)];
     double egalite = 0 ;
-    for (int i = 0 ; i < strlen(sequence) ; i++){
-        if (sequence[i] == sequence2[i] ) {
-            id[i] = sequence[i];
+    for (int i = 0 ; i < strlen(sequence1) ; i++){
+        if (sequence1[i] == sequence2[i] ) {
+            id[i] = sequence1[i];
             egalite++;
         }
         else {
-            id[i] = '_';
+            id[i] = '-';
         }
     }
-
-
+    // affichage resultat
     printf("-id- : %s \n" , id);
-
-
-
-    double res = egalite  / (double) strlen(sequence) ;
-    printf("Identité de séquence: %0.0f/%lu, soit %.2f %%"  , egalite , strlen(sequence), res * 100 );
+    double res = egalite  / (double) strlen(sequence1) ;
+    printf("Identité de séquence: %0.0f/%lu, soit %.2f %%"  , egalite , strlen(sequence1), res * 100 );
 
 }

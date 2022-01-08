@@ -49,4 +49,6 @@ CMakeFiles/analyse.dir/cFiles/transcription.c.o: \
  /usr/include/x86_64-linux-gnu/bits/stdlib-float.h /usr/include/string.h \
  /usr/include/x86_64-linux-gnu/bits/types/locale_t.h \
  /usr/include/x86_64-linux-gnu/bits/types/__locale_t.h \
- /usr/include/strings.h
+ /usr/include/strings.h \
+ /home/mohamed/Documents/GitHub/analyse/cFiles/../hFiles/transcription.h \
+ /home/mohamed/Documents/GitHub/analyse/cFiles/../hFiles/utils.h

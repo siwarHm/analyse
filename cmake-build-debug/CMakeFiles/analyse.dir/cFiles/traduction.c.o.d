@@ -1,6 +1,6 @@
-CMakeFiles/analyse.dir/main.c.o: \
- /home/mohamed/Documents/GitHub/analyse/main.c /usr/include/stdc-predef.h \
- /usr/include/stdio.h \
+CMakeFiles/analyse.dir/cFiles/traduction.c.o: \
+ /home/mohamed/Documents/GitHub/analyse/cFiles/traduction.c \
+ /usr/include/stdc-predef.h /usr/include/stdio.h \
  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
  /usr/include/features.h /usr/include/x86_64-linux-gnu/sys/cdefs.h \
  /usr/include/x86_64-linux-gnu/bits/wordsize.h \
@@ -49,9 +49,5 @@ CMakeFiles/analyse.dir/main.c.o: \
  /usr/include/x86_64-linux-gnu/bits/stdlib-float.h /usr/include/string.h \
  /usr/include/x86_64-linux-gnu/bits/types/locale_t.h \
  /usr/include/x86_64-linux-gnu/bits/types/__locale_t.h \
- /usr/include/strings.h \
- /home/mohamed/Documents/GitHub/analyse/hFiles/calculScore.h \
- /home/mohamed/Documents/GitHub/analyse/hFiles/transcription.h \
- /home/mohamed/Documents/GitHub/analyse/hFiles/calculScorePolarite.h \
- /home/mohamed/Documents/GitHub/analyse/hFiles/traduction.h \
- /home/mohamed/Documents/GitHub/analyse/hFiles/utils.h
+ /usr/include/strings.h /usr/lib/gcc/x86_64-linux-gnu/9/include/stdbool.h \
+ /home/mohamed/Documents/GitHub/analyse/cFiles/../hFiles/traduction.h
