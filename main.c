@@ -7,14 +7,16 @@
 #include "hFiles/calculScorePolarite.h"
 #include "hFiles/traduction.h"
 #include "hFiles/utils.h"
+#include "hFiles/seqCodante.h"
 
 
 
 
 
 int main() {
+    seqCodanteMain();
    // transcriptionMain();
-    traducionMain();
+   // traducionMain();
  /*   char path_input[200] ;
     get_path_from_user(path_input);
     char sequence[10000] ;

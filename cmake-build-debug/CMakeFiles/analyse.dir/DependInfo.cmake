@@ -10,6 +10,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/mohamed/Documents/GitHub/analyse/cFiles/calculScore.c" "CMakeFiles/analyse.dir/cFiles/calculScore.c.o" "gcc" "CMakeFiles/analyse.dir/cFiles/calculScore.c.o.d"
   "/home/mohamed/Documents/GitHub/analyse/cFiles/calculScorePolarite.c" "CMakeFiles/analyse.dir/cFiles/calculScorePolarite.c.o" "gcc" "CMakeFiles/analyse.dir/cFiles/calculScorePolarite.c.o.d"
+  "/home/mohamed/Documents/GitHub/analyse/cFiles/seqCodante.c" "CMakeFiles/analyse.dir/cFiles/seqCodante.c.o" "gcc" "CMakeFiles/analyse.dir/cFiles/seqCodante.c.o.d"
   "/home/mohamed/Documents/GitHub/analyse/cFiles/traduction.c" "CMakeFiles/analyse.dir/cFiles/traduction.c.o" "gcc" "CMakeFiles/analyse.dir/cFiles/traduction.c.o.d"
   "/home/mohamed/Documents/GitHub/analyse/cFiles/transcription.c" "CMakeFiles/analyse.dir/cFiles/transcription.c.o" "gcc" "CMakeFiles/analyse.dir/cFiles/transcription.c.o.d"
   "/home/mohamed/Documents/GitHub/analyse/cFiles/utils.c" "CMakeFiles/analyse.dir/cFiles/utils.c.o" "gcc" "CMakeFiles/analyse.dir/cFiles/utils.c.o.d"

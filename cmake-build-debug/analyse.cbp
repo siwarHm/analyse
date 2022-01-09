@@ -82,6 +82,9 @@
 		<Unit filename="/home/mohamed/Documents/GitHub/analyse/cFiles/calculScorePolarite.c">
 			<Option target="analyse"/>
 		</Unit>
+		<Unit filename="/home/mohamed/Documents/GitHub/analyse/cFiles/seqCodante.c">
+			<Option target="analyse"/>
+		</Unit>
 		<Unit filename="/home/mohamed/Documents/GitHub/analyse/cFiles/traduction.c">
 			<Option target="analyse"/>
 		</Unit>
@@ -95,6 +98,9 @@
 			<Option target="analyse"/>
 		</Unit>
 		<Unit filename="/home/mohamed/Documents/GitHub/analyse/hFiles/calculScorePolarite.h">
+			<Option target="analyse"/>
+		</Unit>
+		<Unit filename="/home/mohamed/Documents/GitHub/analyse/hFiles/seqCodante.h">
 			<Option target="analyse"/>
 		</Unit>
 		<Unit filename="/home/mohamed/Documents/GitHub/analyse/hFiles/traduction.h">

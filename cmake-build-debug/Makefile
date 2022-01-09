@@ -177,6 +177,30 @@ cFiles/calculScorePolarite.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/analyse.dir/build.make CMakeFiles/analyse.dir/cFiles/calculScorePolarite.c.s
 .PHONY : cFiles/calculScorePolarite.c.s
 
+cFiles/seqCodante.o: cFiles/seqCodante.c.o
+.PHONY : cFiles/seqCodante.o
+
+# target to build an object file
+cFiles/seqCodante.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/analyse.dir/build.make CMakeFiles/analyse.dir/cFiles/seqCodante.c.o
+.PHONY : cFiles/seqCodante.c.o
+
+cFiles/seqCodante.i: cFiles/seqCodante.c.i
+.PHONY : cFiles/seqCodante.i
+
+# target to preprocess a source file
+cFiles/seqCodante.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/analyse.dir/build.make CMakeFiles/analyse.dir/cFiles/seqCodante.c.i
+.PHONY : cFiles/seqCodante.c.i
+
+cFiles/seqCodante.s: cFiles/seqCodante.c.s
+.PHONY : cFiles/seqCodante.s
+
+# target to generate assembly for a file
+cFiles/seqCodante.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/analyse.dir/build.make CMakeFiles/analyse.dir/cFiles/seqCodante.c.s
+.PHONY : cFiles/seqCodante.c.s
+
 cFiles/traduction.o: cFiles/traduction.c.o
 .PHONY : cFiles/traduction.o
 
@@ -288,6 +312,9 @@ help:
 	@echo "... cFiles/calculScorePolarite.o"
 	@echo "... cFiles/calculScorePolarite.i"
 	@echo "... cFiles/calculScorePolarite.s"
+	@echo "... cFiles/seqCodante.o"
+	@echo "... cFiles/seqCodante.i"
+	@echo "... cFiles/seqCodante.s"
 	@echo "... cFiles/traduction.o"
 	@echo "... cFiles/traduction.i"
 	@echo "... cFiles/traduction.s"

@@ -3,6 +3,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/analyse.dir/cFiles/calculScore.c.o.d"
   "CMakeFiles/analyse.dir/cFiles/calculScorePolarite.c.o"
   "CMakeFiles/analyse.dir/cFiles/calculScorePolarite.c.o.d"
+  "CMakeFiles/analyse.dir/cFiles/seqCodante.c.o"
+  "CMakeFiles/analyse.dir/cFiles/seqCodante.c.o.d"
   "CMakeFiles/analyse.dir/cFiles/traduction.c.o"
   "CMakeFiles/analyse.dir/cFiles/traduction.c.o.d"
   "CMakeFiles/analyse.dir/cFiles/transcription.c.o"
