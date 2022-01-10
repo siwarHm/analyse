@@ -1,0 +1,35 @@
+all:  main clean
+
+transcription.o: transcription.c
+    gcc -c -Wall transcription.c
+
+alignement.o: alignement.c
+    gcc -c -Wall alignement.c
+
+seqCodante.o: seqCodante.c
+    gcc -c -Wall seqCodante.c
+
+traduction.o: traduction.c
+    gcc -c -Wall traduction.c
+
+calculScore.o: calculScore.c
+    gcc -c -Wall calculScore.c
+
+calculScorePolarite.o: calculScorePolarite.c
+    gcc -c -Wall calculScorePolarite.c
+utils.o: utils.c
+    gcc -c -Wall utils.c
+
+main.o: main.c 
+    gcc -c -Wall main.c
+
+projetC: main.o utils.o calculScorePolarite.o calculScore.o traduction.o seqCodante.o alignement.o transcription.o
+    gcc -std=c11 -pedantic -Wall -Wextra main.c cFiles/transcription.c cFiles/utils.c cFiles/alignement.c cFiles/seqCodante.c cFiles/traduction.c cFiles/calculScore.c  cFiles/calculScorePolarite.c -o analyse.exe
+
+clean:
+    rm *o
+    ./main
+
+mrproper:
+    rm *o projetC
+
