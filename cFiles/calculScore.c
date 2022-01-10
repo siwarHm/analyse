@@ -4,6 +4,9 @@
 #include "../hFiles/calculScore.h"
 #include "../hFiles/utils.h"
 void calculScoreMain() {
+    printf("----------------------------------------------------- \n");
+    printf("|  Calcul du score d’identité entre deux séquences  | \n");
+    printf("-----------------------------------------------------\n");
     // sequence 1
     char path_input1[200] ;
     get_path_from_user(path_input1, "input 1");

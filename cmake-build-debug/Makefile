@@ -129,6 +129,30 @@ analyse/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/analyse.dir/build.make CMakeFiles/analyse.dir/build
 .PHONY : analyse/fast
 
+cFiles/alignement.o: cFiles/alignement.c.o
+.PHONY : cFiles/alignement.o
+
+# target to build an object file
+cFiles/alignement.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/analyse.dir/build.make CMakeFiles/analyse.dir/cFiles/alignement.c.o
+.PHONY : cFiles/alignement.c.o
+
+cFiles/alignement.i: cFiles/alignement.c.i
+.PHONY : cFiles/alignement.i
+
+# target to preprocess a source file
+cFiles/alignement.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/analyse.dir/build.make CMakeFiles/analyse.dir/cFiles/alignement.c.i
+.PHONY : cFiles/alignement.c.i
+
+cFiles/alignement.s: cFiles/alignement.c.s
+.PHONY : cFiles/alignement.s
+
+# target to generate assembly for a file
+cFiles/alignement.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/analyse.dir/build.make CMakeFiles/analyse.dir/cFiles/alignement.c.s
+.PHONY : cFiles/alignement.c.s
+
 cFiles/calculScore.o: cFiles/calculScore.c.o
 .PHONY : cFiles/calculScore.o
 
@@ -306,6 +330,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... analyse"
+	@echo "... cFiles/alignement.o"
+	@echo "... cFiles/alignement.i"
+	@echo "... cFiles/alignement.s"
 	@echo "... cFiles/calculScore.o"
 	@echo "... cFiles/calculScore.i"
 	@echo "... cFiles/calculScore.s"

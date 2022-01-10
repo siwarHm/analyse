@@ -4,9 +4,10 @@
 #include "../hFiles/utils.h"
 void get_path_from_user( char *  path , const char type[10]){
     printf("veuillez saisir le path de fichier %s : \n" , type);
-    ssize_t read;
+    size_t read;
     size_t len = 0;
     read = getline(&path, (size_t *) &path, stdin);
+
     path[strlen(path)-1] = '\0';
 }
 
@@ -18,7 +19,7 @@ void extract_sequence(const char* path_input, char* sequence) {
     FILE * fp;
     char * line = NULL;
     size_t len = 0;
-    ssize_t read;
+    size_t read;
 
     // ouverture du fichier
     fp = fopen(path_input , "r");

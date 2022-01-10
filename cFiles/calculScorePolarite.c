@@ -14,6 +14,9 @@ bool apolaires(char car){
     }
 }
 void calculScorePolariteMain() {
+    printf("------------------------------------------------------------------------------ \n");
+    printf("|  Calcul du score de similarité de polarité entre deux séquences protéiques | \n");
+    printf("------------------------------------------------------------------------------\n");
     // sequence 1
     char path_input1[200] ;
     get_path_from_user(path_input1, "input 1");

@@ -1,0 +1,4 @@
+gcc -std=c11 -pedantic -Wall -Wextra main.c cFiles/transcription.c cFiles/utils.c cFiles/alignement.c cFiles/seqCodante.c cFiles/traduction.c cFiles/calculScore.c  cFiles/calculScorePolarite.c -o analyse.exe
+
+Path Inputs = /home/***/Documents/GitHub/analyse/inputFiles/EXEMPLE.txt
+Path Outputs = /home/***/Documents/GitHub/analyse/outputFiles/EXEMPLE.txt

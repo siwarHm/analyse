@@ -1,4 +1,6 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/analyse.dir/cFiles/alignement.c.o"
+  "CMakeFiles/analyse.dir/cFiles/alignement.c.o.d"
   "CMakeFiles/analyse.dir/cFiles/calculScore.c.o"
   "CMakeFiles/analyse.dir/cFiles/calculScore.c.o.d"
   "CMakeFiles/analyse.dir/cFiles/calculScorePolarite.c.o"

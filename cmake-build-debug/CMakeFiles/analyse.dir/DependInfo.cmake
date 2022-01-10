@@ -8,6 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "/home/mohamed/Documents/GitHub/analyse/cFiles/alignement.c" "CMakeFiles/analyse.dir/cFiles/alignement.c.o" "gcc" "CMakeFiles/analyse.dir/cFiles/alignement.c.o.d"
   "/home/mohamed/Documents/GitHub/analyse/cFiles/calculScore.c" "CMakeFiles/analyse.dir/cFiles/calculScore.c.o" "gcc" "CMakeFiles/analyse.dir/cFiles/calculScore.c.o.d"
   "/home/mohamed/Documents/GitHub/analyse/cFiles/calculScorePolarite.c" "CMakeFiles/analyse.dir/cFiles/calculScorePolarite.c.o" "gcc" "CMakeFiles/analyse.dir/cFiles/calculScorePolarite.c.o.d"
   "/home/mohamed/Documents/GitHub/analyse/cFiles/seqCodante.c" "CMakeFiles/analyse.dir/cFiles/seqCodante.c.o" "gcc" "CMakeFiles/analyse.dir/cFiles/seqCodante.c.o.d"

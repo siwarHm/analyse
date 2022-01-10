@@ -8,54 +8,58 @@
 #include "hFiles/traduction.h"
 #include "hFiles/utils.h"
 #include "hFiles/seqCodante.h"
+#include "hFiles/alignement.h"
 
 
 
 
 
 int main() {
-    seqCodanteMain();
-   // transcriptionMain();
-   // traducionMain();
- /*   char path_input[200] ;
-    get_path_from_user(path_input);
-    char sequence[10000] ;
-    extract_sequence(path_input, sequence);
-    printf(" sequece = %s \n " , sequence);
-    char path_output[200] ;
-    get_path_from_user(path_output);
-    printf(" sequeznce  = @%s@  \n " , sequence);
-    printf(" path output  = @%s@  \n " , path_output);
-    save_sequence(path_output,"output_transcription.txt",sequence);*/
 
-    //test(path_input);
-    //traducionMain();
-    //calculScoreMain();
-    //transcriptionMain();
-    //calculScorePolariteMain();
-    /*
-    int variable ;
-    printf("Veuillez choisir la fonctionnalitée : \n");
+
+   char* variable;
+    size_t read;
+    size_t len = 0;
+    printf("\033[0;34mVeuillez choisir la fonctionnalitée :\033[0m \n");
     printf("1- Recherche de la séquence codante de taille maximale \n");
     printf("2- Transcription d’une séquence ADN en séquence ARN\n");
+    printf("3- Traduction d’une séquence codante en séquence protéique\n");
+    printf("4- Calcul du score d’identité entre deux séquences\n");
+    printf("5- Calcul du score de similarité de polarité entre deux séquences protéiques\n");
+    printf("6- Recherche d’une séquence consensus à partir d’un alignement multiplen\n");
     printf("0- Quitter\n");
-    scanf("%d", &variable);
+    printf("Votre choix :  \n");
 
-    switch(variable)
+    read = getline(&variable, (size_t *) &variable, stdin);
+    variable[strlen(variable)-1] = '\0';
+
+ switch(variable[0] )
     {
-        case 1:
+        case '1':
+            seqCodanteMain();
+
             break;
-        case 2:
-            transcriptionMain2();
+        case '2':
+            transcriptionMain();
             break;
-        case 0:
+        case '3':
+            traducionMain();
+            return 0 ;
+        case '4':
+            calculScoreMain();
+            return 0 ;
+        case '5':
+            calculScorePolariteMain();
+            return 0 ;
+        case '6':
+            alignementMain();
             return 0 ;
         default:
-            //execute your code
-            break;
+            return 0;
     }
+
     return 0;
-     */
+
 
 }
 

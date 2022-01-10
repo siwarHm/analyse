@@ -102,7 +102,9 @@ char prot( char car1 , char car2 , char car3 ) {
 
 void traducionMain (){
 
-    printf(" ----------------------- Module Traduction --------------------- \n");
+    printf("------------------------------------------------------------- \n");
+    printf("|  Traduction d’une séquence codante en séquence protéique  |  \n");
+    printf("-------------------------------------------------------------\n");
     // sequence
     char path_input[200] ;
     get_path_from_user(path_input, "input");

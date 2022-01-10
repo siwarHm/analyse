@@ -76,6 +76,9 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/home/mohamed/Documents/GitHub/analyse/cFiles/alignement.c">
+			<Option target="analyse"/>
+		</Unit>
 		<Unit filename="/home/mohamed/Documents/GitHub/analyse/cFiles/calculScore.c">
 			<Option target="analyse"/>
 		</Unit>
@@ -92,6 +95,9 @@
 			<Option target="analyse"/>
 		</Unit>
 		<Unit filename="/home/mohamed/Documents/GitHub/analyse/cFiles/utils.c">
+			<Option target="analyse"/>
+		</Unit>
+		<Unit filename="/home/mohamed/Documents/GitHub/analyse/hFiles/alignement.h">
 			<Option target="analyse"/>
 		</Unit>
 		<Unit filename="/home/mohamed/Documents/GitHub/analyse/hFiles/calculScore.h">

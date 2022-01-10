@@ -28,9 +28,11 @@ char* substring(char *destination, const char *source, int beg, int n)
 
 void seqCodanteMain() {
 
+    printf("--------------------------------------------------------- \n");
+    printf("|  Recherche de la séquence codante de taille maximale  | \n");
+    printf("--------------------------------------------------------- \n");
     char path_input[100000];
     get_path_from_user(path_input, "input");
-//    /home/fatma/Downloads/analysefi/sequence (copy).fasta
     char sequence[10000];
     char seqPlusLongue[10000] = "";
 

@@ -9,6 +9,9 @@ void test(char *variable) {
 }
 
 void transcriptionMain () {
+    printf("------------------------------------------------------ \n");
+    printf("|  Transcription d’une séquence ADN en séquence ARN  |  \n");
+    printf("------------------------------------------------------\n");
     // sequence
     char path_input[200] ;
     get_path_from_user(path_input, "input");
